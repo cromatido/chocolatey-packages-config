@@ -10,8 +10,8 @@ This could be done by issuing the following in a Command Prompt:
 
 Then get the packages.config file:
 
-    @powershell -Command "((New-Object System.Net.WebClient).DownloadFile('https://raw.github.com/soren/chocolatey-packages-config/master/packages.config', 'packages2.config'))"
-
+    curl -outfile packages.config https://raw.githubusercontent.com/cromatido/chocolatey-packages-config/master/packages.config
+  
 and now you're ready to install (might take some time):
 
     cinst packages.config
