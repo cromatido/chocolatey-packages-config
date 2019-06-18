@@ -14,4 +14,4 @@ Then get the packages.config file:
   
 and now you're ready to install (might take some time):
 
-    cinst packages.config
+    cinst packages.config -y
